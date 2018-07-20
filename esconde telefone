@@ -1,0 +1,1 @@
+var tag=document.querySelector(".telfooter"),initialText=tag.textContent,lastCharacters=initialText.slice(-6),finalText=initialText.replace(lastCharacters,"...clique para ver o n\u00famero");tag.textContent=finalText;tag.style.cursor="pointer";tag.addEventListener("click",function(){tag.textContent===finalText&&(tag.style.cursor="initial",tag.textContent=initialText)});
